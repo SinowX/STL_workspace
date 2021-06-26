@@ -12,6 +12,12 @@ int main()
 
     map<string,int> anewMap(myMap1.begin(),myMap1.end());
 
+    cout<<sizeof(myMap2.find("C Course")->first)<<endl;
+    cout<<sizeof(myMap2.find("STL Course"))<<endl;
+    
+
+    cout<<"myMap2 Elements : " << myMap2.size()<<endl;
+    cout<<"myMap2 Size : "<<sizeof(myMap2)<<endl;
 
     auto it=myMap1.find("C language");
 
@@ -27,6 +33,7 @@ int main()
 
     myMap2.emplace(make_pair("sahdiu",1232));
 
-    cout << myMap2.size()<<endl;
+    cout<<"myMap2 Elements : " << myMap2.size()<<endl;
+    cout<<"myMap2 Size : "<<sizeof(myMap2)<<endl;
     return 0;
 }
